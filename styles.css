@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: "Heebo", sans-serif;
+
+}
+
+header{
+    width: 100%;
+    background-image: url('./images/herobackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-logo{
+    width: 80%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+
+    a img{
+        width: 70px;
+    }
+
+    p{
+        font-size: 20px;
+        color: #022631;
+        font-weight: 700;
+    }
+}
+
+.hero-section{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 80px 0;
+}
+
+.hero-text{
+    width: 50%;
+
+    h1{
+        font-size: clamp(3rem, 4.5vw, 5.5rem);
+        background: linear-gradient(to right,#ba8261, #022631);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 6px;;
+    }
+
+    p{
+        font-size: clamp(1.5rem, 1.2vw, 2rem);
+        line-height: 1.2;
+        padding: 25px 0;
+    }
+
+    button{
+        background-color: #fff5ee;
+        padding: 20px 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}
+
+.ratings{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 30px 0 0;
+    flex-wrap: nowrap;
+}
+
+.dev-images img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    border: 2px solid white; 
+    flex-shrink: 0;
+}
+
+.dev-images img + img{
+    margin-left: -12px;
+}
+
+.dev-ratings img{
+    width: 130px;
+}
+
+.dev-ratings p{
+    padding: 0;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+}
+
+
+
+.hero-image{
+    width: 50%;
+
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}
+
+.read{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    gap: 6rem;
+
+    .read-image{
+        width: 50%;
+
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    .read-text{
+        width: 50%;
+
+        h2{
+            font-size: clamp(3rem, 4.5vw, 4rem);
+            font-weight: 700;
+            line-height: 1;
+            color: #022631;
+        }
+    }
+}
+
+.description{
+    padding: 20px 0;
+
+    .check-boxes{
+        display: flex;
+        gap: 10px;
+        padding: 20px 0;
+        /* justify-content: center; */
+        align-items: center;
+        p{
+            font-size: clamp(1rem, 2vw, 2rem);
+            line-height: 1;
+        }
+    }
+}
+
+.description .material-symbols-outlined{
+    font-size: clamp(2rem, 1.2vw, 3rem);
+}
+
+.club{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 0 0 100px;
+}
+
+.club-text{
+    width: 50%;
+
+    h2{
+        font-size: clamp(3rem, 4.5vw, 4.5rem);
+        font-weight: 700;
+        line-height: 1;
+        color: #022631;
+    }
+
+    p{
+        font-size: clamp(1rem, 2vw, 2rem);
+        padding: 20px 0;
+    }
+}
+
+.club-image{
+    width: 50%;
+
+    img{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+.tech-journey{
+    width: 80%;
+    background-image: url('./images/herobackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    h2{
+        width: 50%;
+        text-align: center;
+        color: #022631;
+        font-size: clamp(3rem, 4.5vw, 5rem);
+        font-weight: 700;
+        line-height: 1;
+        padding: 80px 0 50px;
+    }
+}
+
+.tech-journey .steps{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px 0 50px;
+}
+
+.tech-journey .number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    p{
+
+        background-color: #fff5ee;
+        font-size: 25px;
+        padding: 7px 15px;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    img{
+        width: 150px;
+    }
+}
+
+.number4{
+    padding: 20px 0;
+
+    .number{
+        padding-bottom: 30px;
+    }
+}
+
+.number1 p{
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.membership{
+    padding: 90px 0;
+    width: 60%;
+
+    h2{
+        font-size: clamp(3rem, 4.5vw, 5rem);
+        color: #022631;
+        text-align: center;
+        line-height: 1;
+    }
+}
+
+.membership-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 0 0;
+    gap: 30px;
+}
+
+.membership-cards .card1{
+    background-color: #fff;
+    padding: 20px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+
+    .price{
+        border-bottom: 1px solid black;
+
+        p{
+             padding-bottom: 20px;
+
+             span{
+                font-size: clamp(1.5rem, 1.2vw, 2rem);
+                font-weight: 700;
+            }
+        }
+    }
+
+    h3{
+        font-size: clamp(1.5rem, 4.5vw, 2.5rem);
+        color: #022631;
+    }
+
+    p{
+        font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    }
+
+    button{
+        background-color: #fff5ee;
+        padding: 20px 0;
+        border: 2px solid black;
+        border-radius: 10px;
+
+        a{ 
+            text-decoration: none;
+            color: black;
+            font-size: clamp(0.9rem, 1.2vw, 1.5rem);
+            font-weight: 700;
+        }
+    }
+}
+
+.membership-cards .card2{
+        background: linear-gradient(to right,#fff5ee, #017ca8);
+        /* padding: 30px 0; */
+    }
+
+.booking {
+    padding: 20px 0;
+
+    .check-boxes{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0 0;
+    }
+}
+
+.review{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4{
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+        color: #022631;
+        text-align: center;
+        padding: 0 0 20px;
+    }
+
+    p{
+        font-size: clamp(0.5rem, 1.2vw, 1rem);
+        color: #022631;
+        text-align: center;
+    }
+}
+
+footer{
+    width: 100%;
+    background-image: url('./images/Footerbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    .footer-content{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid white;
+        padding: 50px 0;
+    }
+
+    h2{
+        width: 50%;
+        font-size: clamp(3rem, 4.5vw, 5rem);
+        text-align: center;
+        color: white;
+        line-height: 1;
+        padding-bottom: 40px;
+    }
+
+    button{
+        background-color: transparent;
+        padding: 20px 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+        }
+    }
+
+    .footer-p{
+        font-size: clamp(1rem, 1.2vw, 2rem);
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+footer .ratings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        color: white;
+    }
+}
+
+@media(max-width:1024px){
+
+    .nav-logo{
+        width: 90%;
+    }
+
+    .hero-section{
+        width: 90%;
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    .hero-image, .hero-text{
+        width: 100%;
+    }
+
+    .hero-text h1{
+        width: 80%;
+        font-size: clamp(4rem, 4.5vw, 6rem);
+    }
+
+    .dev-images img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .read, .club{
+        flex-direction: column;
+        width: 90%;
+        gap: 30px;
+    }
+
+    .read .read-image, .read .read-text, .club-text, .club-image{
+        width: 100%;
+    }
+
+    .club-text{
+        h2{
+            width: 80%;
+            font-size: clamp(3rem, 2vw, 5rem);
+        }
+    }
+
+    .tech-journey{
+        justify-content: left;
+        width: 90%;
+
+        h2{
+            text-align: left;
+            width: 90%;
+        }
+
+        .steps{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        .number img{
+            display: none;
+        }
+    }
+
+    .membership{
+        width: 90%;
+
+        .membership-cards{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .review{
+        width: 90%;
+
+        .review-rating{
+            width: 100%;
+            display: flex;
+            justify-content: left;
+        }
+
+            h4{
+                text-align: left;
+                font-size: clamp(2.5rem, 3vw, 4.5rem);
+                line-height: 1;
+            }
+
+            p{
+                text-align: left;
+                font-size: clamp(1rem, 2vw, 2rem)
+            }
+        }
+}
+
+@media(max-width: 639px){
+    .hero-text h1{
+        width: 100%;
+        font-size: clamp(3.5rem, 2vw, 6rem);
+    }
+
+    .club-text p{
+        font-size: clamp(1.5rem, 2vw, 3rem);
+    }
+
+    .membership .membership-cards{
+            grid-template-columns: 1fr;
+        }
+
+        .card1 button a {
+            font-size: clamp( 1rem, 1.2vw, 2rem);
+        }
+
+    footer h2{
+        width: 90%;
+    }
+
+    footer{
+        .footer-content{
+        width: 90%;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
