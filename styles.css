@@ -472,7 +472,13 @@ footer .ratings{
         height: 30px;
     }
 
-    .read, .club{
+    .read{
+        flex-direction: column-reverse;
+        width: 90%;
+        gap: 30px;
+    }
+
+    .club{
         flex-direction: column;
         width: 90%;
         gap: 30px;
